@@ -9,7 +9,7 @@
         define("TAM", 10);
 
         $color = "gray";
-        print "<table border = 5>";
+        print "<table border = 3>";
         for ($i = 0; $i <= 90; $i += TAM)
         {
             print "<tr>";
