@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>Consulta</title>
 </head>
@@ -34,6 +34,8 @@
                 print "</tr>";
             endfor;
         endif;
+
+        mysqli_close ($conexion);
     ?>
     </table>
 </body>
