@@ -33,7 +33,7 @@
                 print "<td bgcolor = '#BFBFBF'>";
                     print "<div class = 'grafico'>";
                         if ($votos_totales == 0):
-                            print "<strong class = 'barra' style = 'width: 0%;'> 0 % </strong>";
+                            print "<strong class = 'barra' style = 'width: 0%;'> </strong>";
                         else:
                             print "<strong class = 'barra' style = 'width: " . round($fila["votos1"] / $votos_totales * 100.0) . "%;'>" . round($fila["votos1"] / $votos_totales * 100.0, 2) . " % </strong>";
                         endif;
@@ -51,7 +51,7 @@
                 print "<td bgcolor = '#BFBFBF'>";
                     print "<div class = 'grafico'>";
                         if ($votos_totales == 0):
-                            print "<strong class = 'barra' style = 'width: 0%;'> 0 % </strong>";
+                            print "<strong class = 'barra' style = 'width: 0%;'> </strong>";
                         else:
                             print "<strong class = 'barra' style = 'width: " . round($fila["votos2"] / $votos_totales * 100.0) . "%;'>" . round($fila["votos2"] / $votos_totales * 100.0, 2) . " % </strong>";
                         endif;

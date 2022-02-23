@@ -1,0 +1,14 @@
+.cuadro
+{
+    width: 1000px;
+    border: 2px;
+    border-style: solid;
+    border-color: #7F0EFF;
+    padding: 3px;
+}
+
+.form-item
+{
+    display: flex; 
+    justify-content: right;
+}
