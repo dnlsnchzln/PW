@@ -9,29 +9,21 @@
 
     <div class = "cuadro">
         <form action = "e3_2.php" method = "POST">
-            <div class = "form-item">
-                <label> Título: * </label>
-                <input type = "text" name = "ittitulo" id = "ittitulo"><br><br>
-            </div>
-            
-            <div class = "form-item">
-                <label> Texto: * </label>
-                <textarea name = "tatexto" id = "tatexto" cols="30" rows="10"></textarea><br><br>
-            </div>
+            <label> Título: * </label>
+            <input type = "text" name = "ittitulo" id = "ittitulo"><br><br>
+        
+            <label> Texto: * </label>
+            <textarea name = "tatexto" id = "tatexto" cols="30" rows="3"></textarea><br><br>
 
-            <div class = "form-item">
-                <label> Categoría: </label>
-                <select name = "scategoria" id = "scategoria">
-                    <option value = "Promociones"> Promociones </option>
-                    <option value = "ofertas"> Ofertas </option>
-                    <option value = "costas"> Costas </option>
-                </select><br><br>
-            </div>
+            <label> Categoría: </label>
+            <select name = "scategoria" id = "scategoria">
+                <option value = "Promociones"> Promociones </option>
+                <option value = "ofertas"> Ofertas </option>
+                <option value = "costas"> Costas </option>
+            </select><br><br>
 
-            <div class = "form-item">
-                <label> Imagen: </label>
-                <input type = "file" name = "ifimagen" id = "ifimagen"><br><br>
-            </div>
+            <label> Imagen: </label>
+            <input type = "file" name = "ifimagen" id = "ifimagen"><br><br>
 
             <input type = "submit" value = "Insertar noticia">
         </form>
