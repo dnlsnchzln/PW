@@ -19,20 +19,24 @@
 
             $k = 0;
             for ($i = 2; $i < $n_files; $i++):
-
-                if ($k % TAM == 0):
-
-                    if ($i > 2):
-
-                        print "</tr></br>";
-                    endif;
-
-                    print "<tr>";
-                endif;
                 
-                print "<td>" . "<a href = 'e10.php'><img src = 'fotos/" . $files[$i] . "' width = '100 px' heigth = '100 px'></a></img>" . "</td>";
+                preg_match_all('/.*\.(jpg|jpeg|png)/', $files[$i], $matches);
 
-                $k++;
+                if (count($matches) != 0):
+                    if ($k % TAM == 0):
+
+                        if ($i > 2):
+
+                            print "</tr></br>";
+                        endif;
+
+                        print "<tr>";
+                    endif;
+                    
+                    print "<td>" . "<a href = 'fotos/" . $files[$i] . "'><img src = 'fotos/" . $files[$i] . "' width = '100 px' heigth = '100 px'></a></img>" . "</td>";
+
+                    $k++;
+                endif;
             endfor;
 
             print "</table>";
